@@ -1,0 +1,77 @@
+$firstPageColor: #505F98;
+$textColor: #6F7CB2;
+$headingColor: #091133;
+$buttonBgc: #111B47;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0F0F0;
+}
+
+.stpage-wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    height: 80px;
+
+    .nav-items {
+        height: inherit;
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    ul {
+        flex-grow: 1;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            padding: 0 100px 0 0;
+
+            a {
+                text-decoration: none;
+                color: $firstPageColor;
+                font-weight: normal;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.web-title {
+    flex-grow: 2;
+    color: #37447E;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.buynow {
+    background-color: $buttonBgc;
+    color: white;
+    height: 26px;
+    width: 160px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($buttonBgc, 10%);
+    }
+
+    &:active {
+        background-color: darken($buttonBgc, 10%);
+    }
+}
