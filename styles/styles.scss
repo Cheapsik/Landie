@@ -3,6 +3,11 @@ $textColor: #6F7CB2;
 $headingColor: #091133;
 $buttonBgc: #111B47;
 
+@mixin titleWrapper(){
+        width: 540px;
+        height: 425px;
+        position: absolute;
+}
 @mixin buttondark() {
     background-color: $buttonBgc;
     color: white;
@@ -179,7 +184,7 @@ nav {
 // First page
 
 .second-page-main-wrapper {
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 
     .second-article-wrapper {
@@ -190,7 +195,7 @@ nav {
         left: 200px;
     }
 
-    .ndtitle-wrapper {
+    .title-wrapper {
         @include text();
     }
 
@@ -221,11 +226,43 @@ nav {
     }
 
     .second-blob {
-        width: 900px;
+        width: 1100px;
         position: absolute;
-        transform: rotate(180deg);
+        transform: rotate(180deg) translateX(100px);
         z-index: -1;
     }
 }
 
 // Second Page
+
+@mixin pageCopy(){
+    .title-wrapper{
+        @include text();
+        @include titleWrapper();
+        top: 50%;
+        left: 20%;
+        transform: translateY(-25%);
+    }
+    img{
+        position: absolute;
+        top:30%;
+        right: 10%;
+    }
+}
+
+.page-3{
+    height: 100vh;
+    position: relative;
+    @include pageCopy();
+    
+}
+.page-4{
+    height: 100vh;
+    position: relative;
+    @include pageCopy();
+}
+.page-5{
+    height: 100vh;
+    position: relative;
+    @include pageCopy();
+}

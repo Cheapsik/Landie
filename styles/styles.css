@@ -167,7 +167,7 @@ nav .buynow:active {
 }
 
 .second-page-main-wrapper {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -179,12 +179,12 @@ nav .buynow:active {
   left: 200px;
 }
 
-.second-page-main-wrapper .ndtitle-wrapper h2 {
+.second-page-main-wrapper .title-wrapper h2 {
   font-size: 36px;
   color: #091133;
 }
 
-.second-page-main-wrapper .ndtitle-wrapper p {
+.second-page-main-wrapper .title-wrapper p {
   font-size: 16px;
   color: #6F7CB2;
 }
@@ -242,10 +242,103 @@ nav .buynow:active {
 }
 
 .second-page-main-wrapper .second-blob {
-  width: 900px;
+  width: 1100px;
   position: absolute;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(180deg) translateX(100px);
+          transform: rotate(180deg) translateX(100px);
   z-index: -1;
+}
+
+.page-3 {
+  height: 100vh;
+  position: relative;
+}
+
+.page-3 .title-wrapper {
+  width: 540px;
+  height: 425px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.page-3 .title-wrapper h2 {
+  font-size: 36px;
+  color: #091133;
+}
+
+.page-3 .title-wrapper p {
+  font-size: 16px;
+  color: #6F7CB2;
+}
+
+.page-3 img {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.page-4 {
+  height: 100vh;
+  position: relative;
+}
+
+.page-4 .title-wrapper {
+  width: 540px;
+  height: 425px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.page-4 .title-wrapper h2 {
+  font-size: 36px;
+  color: #091133;
+}
+
+.page-4 .title-wrapper p {
+  font-size: 16px;
+  color: #6F7CB2;
+}
+
+.page-4 img {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.page-5 {
+  height: 100vh;
+  position: relative;
+}
+
+.page-5 .title-wrapper {
+  width: 540px;
+  height: 425px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.page-5 .title-wrapper h2 {
+  font-size: 36px;
+  color: #091133;
+}
+
+.page-5 .title-wrapper p {
+  font-size: 16px;
+  color: #6F7CB2;
+}
+
+.page-5 img {
+  position: absolute;
+  top: 30%;
+  right: 10%;
 }
 /*# sourceMappingURL=styles.css.map */
