@@ -13,6 +13,7 @@ body {
 .stpage-wrapper {
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 nav {
@@ -37,26 +38,26 @@ nav .nav-items {
           align-items: center;
 }
 
-nav ul {
+nav .nav-items ul {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   list-style-type: none;
 }
 
-nav ul li {
+nav .nav-items ul li {
   display: inline-block;
   padding: 0 100px 0 0;
 }
 
-nav ul li a {
+nav .nav-items ul li a {
   text-decoration: none;
   color: #505F98;
   font-weight: normal;
   font-size: 14px;
 }
 
-.web-title {
+nav .web-title {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -65,22 +66,103 @@ nav ul li a {
   font-size: 26px;
 }
 
-.buynow {
+nav .buynow {
   background-color: #111B47;
   color: white;
-  height: 26px;
-  width: 160px;
   border: none;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  -webkit-transition: .1s;
+  transition: .1s;
+  width: 160px;
+  height: 26px;
 }
 
-.buynow:hover {
+nav .buynow:hover {
   background-color: #070b1e;
 }
 
-.buynow:active {
+nav .buynow:active {
   background-color: #070b1e;
+}
+
+.sttext-wrapper {
+  width: 540px;
+  height: 425px;
+  margin: 200px 0 0 200px;
+}
+
+.sttext-wrapper h1 {
+  color: #091133;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.sttext-wrapper p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #505F98;
+  margin-top: 20px;
+}
+
+.sttext-wrapper .button {
+  background-color: #111B47;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: .1s;
+  transition: .1s;
+  margin: 50px 50px 0 0;
+  width: 190px;
+  height: 36px;
+  font-size: 16px;
+}
+
+.sttext-wrapper .button:hover {
+  background-color: #070b1e;
+}
+
+.sttext-wrapper .button:active {
+  background-color: #070b1e;
+}
+
+.sttext-wrapper .button-white {
+  background-color: transparent;
+  color: #091133;
+  font-size: 16px;
+  width: 190px;
+  height: 36px;
+  border: 2px solid #091133;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.sttext-wrapper .button-white:hover {
+  background-color: #505F98;
+  color: white;
+}
+
+.sttext-wrapper .button-white:active {
+  background-color: #505F98;
+  color: white;
+}
+
+.main-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.main-blob {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 /*# sourceMappingURL=styles.css.map */

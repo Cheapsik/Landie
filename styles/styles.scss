@@ -3,6 +3,24 @@ $textColor: #6F7CB2;
 $headingColor: #091133;
 $buttonBgc: #111B47;
 
+@mixin buttondark() {
+    background-color: $buttonBgc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: .1s;
+
+    &:hover {
+        background-color: darken($buttonBgc, 10%);
+    }
+
+    &:active {
+        background-color: darken($buttonBgc, 10%);
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +35,7 @@ body {
 .stpage-wrapper {
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 nav {
@@ -30,48 +49,96 @@ nav {
         flex-wrap: nowrap;
         flex-direction: row;
         align-items: center;
+
+
+        ul {
+            flex-grow: 1;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                padding: 0 100px 0 0;
+
+                a {
+                    text-decoration: none;
+                    color: $firstPageColor;
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+            }
+        }
     }
 
-    ul {
-        flex-grow: 1;
-        list-style-type: none;
+    .web-title {
+        flex-grow: 2;
+        color: #37447E;
+        font-weight: 900;
+        font-size: 26px;
+    }
 
-        li {
-            display: inline-block;
-            padding: 0 100px 0 0;
+    .buynow {
+        @include buttondark();
+        width: 160px;
+        height: 26px;
+    }
+}
 
-            a {
-                text-decoration: none;
-                color: $firstPageColor;
-                font-weight: normal;
-                font-size: 14px;
-            }
+
+.sttext-wrapper {
+    width: 540px;
+    height: 425px;
+    margin: 200px 0 0 200px;
+    h1 {
+        color: $headingColor;
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        color: $firstPageColor;
+        margin-top: 20px;
+    }
+    .button{
+        @include buttondark();
+        margin: 50px 50px 0 0;
+        width: 190px;
+        height: 36px;
+        font-size: 16px;
+    }
+    .button-white{
+        background-color: transparent;
+        color: $headingColor;
+        font-size: 16px;
+        width: 190px;
+        height: 36px;
+        border: 2px solid $headingColor;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        transition: .1s;
+        &:hover {
+            background-color: $firstPageColor;
+            color: white;
+        }
+    
+        &:active {
+            background-color: $firstPageColor;
+            color: white;
         }
     }
 }
 
-.web-title {
-    flex-grow: 2;
-    color: #37447E;
-    font-weight: 900;
-    font-size: 26px;
+.main-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
-
-.buynow {
-    background-color: $buttonBgc;
-    color: white;
-    height: 26px;
-    width: 160px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
-
-    &:hover {
-        background-color: darken($buttonBgc, 10%);
-    }
-
-    &:active {
-        background-color: darken($buttonBgc, 10%);
-    }
+.main-blob{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
 }
