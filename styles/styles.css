@@ -165,4 +165,87 @@ nav .buynow:active {
   bottom: 0;
   z-index: -1;
 }
+
+.second-page-main-wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.second-page-main-wrapper .second-article-wrapper {
+  width: 540px;
+  height: 425px;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+
+.second-page-main-wrapper .ndtitle-wrapper h2 {
+  font-size: 36px;
+  color: #091133;
+}
+
+.second-page-main-wrapper .ndtitle-wrapper p {
+  font-size: 16px;
+  color: #6F7CB2;
+}
+
+.second-page-main-wrapper .project-title-st {
+  float: left;
+  width: 255px;
+  height: 140px;
+  margin-top: 80px;
+}
+
+.second-page-main-wrapper .project-title-st img {
+  margin-bottom: 15px;
+}
+
+.second-page-main-wrapper .project-title-st h3 {
+  font-size: 16px;
+  color: #091133;
+}
+
+.second-page-main-wrapper .project-title-st p {
+  font-size: 12px;
+  color: #5D6970;
+}
+
+.second-page-main-wrapper .project-title-nd {
+  float: left;
+  width: 255px;
+  height: 140px;
+  margin-top: 80px;
+}
+
+.second-page-main-wrapper .project-title-nd img {
+  margin-bottom: 15px;
+}
+
+.second-page-main-wrapper .project-title-nd h3 {
+  font-size: 16px;
+  color: #091133;
+}
+
+.second-page-main-wrapper .project-title-nd p {
+  font-size: 12px;
+  color: #5D6970;
+}
+
+.second-page-main-wrapper .project-title-nd::after {
+  clear: both;
+}
+
+.second-page-main-wrapper .second-img {
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+}
+
+.second-page-main-wrapper .second-blob {
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: -1;
+  overflow: hidden;
+}
 /*# sourceMappingURL=styles.css.map */
