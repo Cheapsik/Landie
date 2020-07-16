@@ -21,26 +21,29 @@ $buttonBgc: #111B47;
     }
 }
 
-@mixin text(){
-    h2{
+@mixin text() {
+    h2 {
         font-size: 36px;
         color: $headingColor;
     }
-    p{
+
+    p {
         font-size: 16px;
         color: $textColor;
     }
 }
 
-@mixin titleText(){
-    img{
+@mixin titleText() {
+    img {
         margin-bottom: 15px;
     }
-    h3{
+
+    h3 {
         font-size: 16px;
         color: #091133;
     }
-    p{
+
+    p {
         font-size: 12px;
         color: #5D6970;
     }
@@ -110,7 +113,7 @@ nav {
 
 
 .sttext-wrapper {
-     h1 {
+    h1 {
         color: $headingColor;
         font-weight: 500;
         font-size: 50px;
@@ -122,18 +125,20 @@ nav {
         color: $firstPageColor;
         margin-top: 20px;
     }
+
     width: 540px;
     height: 425px;
     margin: 200px 0 0 200px;
-    
-    .button{
+
+    .button {
         @include buttondark();
         margin: 50px 50px 0 0;
         width: 190px;
         height: 36px;
         font-size: 16px;
     }
-    .button-white{
+
+    .button-white {
         background-color: transparent;
         color: $headingColor;
         font-size: 16px;
@@ -144,11 +149,12 @@ nav {
         outline: none;
         cursor: pointer;
         transition: .1s;
+
         &:hover {
             background-color: $firstPageColor;
             color: white;
         }
-    
+
         &:active {
             background-color: $firstPageColor;
             color: white;
@@ -156,57 +162,65 @@ nav {
     }
 }
 
-.main-img{
+.main-img {
     position: absolute;
     right: 0;
     bottom: 0;
 }
-.main-blob{
+
+.main-blob {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
-    
+
 }
+
 // First page
 
-.second-page-main-wrapper{
+.second-page-main-wrapper {
     height: 100vh;
     position: relative;
-    
-    .second-article-wrapper{
+
+    .second-article-wrapper {
         width: 540px;
         height: 425px;
         position: absolute;
         top: 300px;
         left: 300px;
     }
-    .ndtitle-wrapper{
+
+    .ndtitle-wrapper {
         @include text();
     }
-    .project-title-st{
+
+    .project-title-st {
         @include titleText();
         float: left;
         width: 255px;
         height: 140px;
         margin-top: 80px;
     }
-    .project-title-nd{
+
+    .project-title-nd {
         @include titleText();
         float: left;
         width: 255px;
         height: 140px;
         margin-top: 80px;
-        &::after{
+
+        &::after {
             clear: both;
         }
     }
-    .second-img{
+
+    .second-img {
         position: absolute;
         bottom: 200px;
         right: 200px;
     }
-    .second-blob{
+
+    .second-blob {
         position: absolute;
         transform: rotate(180deg);
         z-index: -1;
