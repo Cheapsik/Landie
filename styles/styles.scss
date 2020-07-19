@@ -135,6 +135,10 @@ nav {
 
 
 .sttext-wrapper {
+    width: 540px;
+    height: 425px;
+    margin: 200px 0 0 10%;
+
     h1 {
         color: $headingColor;
         font-weight: 500;
@@ -147,10 +151,6 @@ nav {
         color: $firstPageColor;
         margin-top: 20px;
     }
-
-    width: 540px;
-    height: 425px;
-    margin: 200px 0 0 200px;
 
     .button {
         @include buttondark();
@@ -209,7 +209,7 @@ nav {
         height: 425px;
         position: absolute;
         top: 200px;
-        left: 200px;
+        left: 10%;
     }
 
     .title-wrapper {
@@ -269,4 +269,122 @@ nav {
     height: 100vh;
     position: relative;
     @include pageCopy();
+}
+
+.page {
+    height: 110vh;
+    position: relative;
+
+    .title-wrapper {
+        @include text();
+        width: 600px;
+        height: 395px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-49%, -60%);
+        text-align: center;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            margin: 35px 0 0 0;
+            color: #222F65;
+            font-size: 50px;
+        }
+
+        .price-description {
+            margin-bottom: 35px;
+            font-size: 16px;
+            color: #37447E;
+        }
+
+        .button-quote {
+            font-size: 14px;
+            color: #5D6970;
+            margin-bottom: 5px;
+        }
+
+        .button {
+            @include buttondark();
+            width: 190px;
+            height: 32px;
+        }
+    }
+
+    .footer-wrapper {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        background-color: #E7ECFF;
+
+        .fotter-items-up {
+            height: 20vh;
+            max-width: 80%;
+            border-bottom: 1px solid #CDD1D4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+            .web-title {
+                color: #37447E;
+                font-weight: 900;
+                font-size: 26px;
+            }
+
+            p {
+                color: #939EA4;
+                font-weight: normal;
+                font-size: 14px;
+            }
+
+            button {
+                @include buttondark();
+                height: 26px;
+                width: 110px;
+            }
+        }
+
+        .fotter-items-down {
+            height: 10vh;
+            max-width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: #929ECC;
+                        margin: 0 100px 0 0;
+                        font-size: 14px;
+
+                    }
+                }
+            }
+
+            i {
+                margin: 0 10px;
+                color: #929ECC;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateY(-2px);
+                }
+
+            }
+        }
+    }
 }
