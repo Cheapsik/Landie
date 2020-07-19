@@ -1,75 +1,5 @@
-$firstPageColor: #505F98;
-$textColor: #6F7CB2;
-$headingColor: #091133;
-$buttonBgc: #111B47;
-
-@mixin pageCopy() {
-    .title-wrapper {
-        @include text();
-        @include titleWrapper();
-        top: 50%;
-        left: 20%;
-        transform: translateY(-25%);
-    }
-
-    img {
-        position: absolute;
-        top: 30%;
-        right: 10%;
-    }
-}
-
-@mixin titleWrapper() {
-    width: 540px;
-    height: 425px;
-    position: absolute;
-}
-
-@mixin buttondark() {
-    background-color: $buttonBgc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
-    transition: .1s;
-
-    &:hover {
-        background-color: darken($buttonBgc, 10%);
-    }
-
-    &:active {
-        background-color: darken($buttonBgc, 10%);
-    }
-}
-
-@mixin text() {
-    h2 {
-        font-size: 36px;
-        color: $headingColor;
-    }
-
-    p {
-        font-size: 16px;
-        color: $textColor;
-    }
-}
-
-@mixin titleText() {
-    img {
-        margin-bottom: 15px;
-    }
-
-    h3 {
-        font-size: 16px;
-        color: #091133;
-    }
-
-    p {
-        font-size: 12px;
-        color: #5D6970;
-    }
-}
+@import "_variables";
+@import "_mixins";
 
 * {
     padding: 0;
@@ -82,59 +12,56 @@ body {
     background-color: #F0F0F0;
 }
 
-.stpage-wrapper {
+.page-first {
     height: 100vh;
     width: 100%;
     position: relative;
-}
 
-nav {
-    height: 80px;
+    nav {
+        height: 80px;
 
-    .nav-items {
-        height: inherit;
-        max-width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        align-items: center;
+        .nav-items {
+            height: inherit;
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
 
+            ul {
+                flex-grow: 1;
+                list-style-type: none;
 
-        ul {
-            flex-grow: 1;
-            list-style-type: none;
+                li {
+                    display: inline-block;
+                    padding: 0 100px 0 0;
 
-            li {
-                display: inline-block;
-                padding: 0 100px 0 0;
-
-                a {
-                    text-decoration: none;
-                    color: $firstPageColor;
-                    font-weight: normal;
-                    font-size: 14px;
+                    a {
+                        text-decoration: none;
+                        color: $firstPageColor;
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
                 }
             }
         }
     }
 
     .web-title {
-        flex-grow: 2;
-        color: #37447E;
-        font-weight: 900;
-        font-size: 26px;
+        @extend %webTitle;
+        flex-grow: 2;   
     }
 
-    .buynow {
-        @include buttondark();
+    .button {
+        @extend %buttondark;
         width: 160px;
         height: 26px;
     }
 }
 
 
-.sttext-wrapper {
+.text-wrapper {
     width: 540px;
     height: 425px;
     margin: 200px 0 0 10%;
@@ -153,7 +80,7 @@ nav {
     }
 
     .button {
-        @include buttondark();
+        @extend %buttondark;
         margin: 50px 50px 0 0;
         width: 190px;
         height: 36px;
@@ -198,85 +125,77 @@ nav {
 
 }
 
-// First page
 
-.second-page-main-wrapper {
-    height: 100vh;
-    position: relative;
 
-    .second-article-wrapper {
+.page {
+    @extend %page;
+
+    .article-wrapper {
         width: 540px;
-        height: 425px;
+        height: 422px;
         position: absolute;
-        top: 200px;
+        top: 30%;
         left: 10%;
+        .project-wrapper {
+            @extend %text;
+        }
     }
-
-    .title-wrapper {
-        @include text();
-    }
-
-    .project-title-st {
-        @include titleText();
+    .project-title {
+        @extend %titleText;
         float: left;
         width: 255px;
         height: 140px;
         margin-top: 80px;
-    }
-
-    .project-title-nd {
-        @include titleText();
-        float: left;
-        width: 255px;
-        height: 140px;
-        margin-top: 80px;
-
-        &::after {
+        &::after{
+            content: '';
             clear: both;
+        }
+        img{
+            position: relative;
+            left: 0;
         }
     }
 
     .second-img {
         position: absolute;
-        bottom: 200px;
-        right: 200px;
-    }
-
-    .second-blob {
-        width: 1100px;
-        position: absolute;
-        transform: rotate(180deg) translateX(100px);
-        z-index: -1;
+        top: 10%;
+        right: 10%;
     }
 }
 
-// Second Page
 
-.page-3 {
-    height: 100vh;
-    position: relative;
-    @include pageCopy();
 
-}
+.page {
+    @extend %page;
+    @extend %pageCopy;
 
-.page-4 {
-    height: 100vh;
-    position: relative;
-    @include pageCopy();
-}
-
-.page-5 {
-    height: 100vh;
-    position: relative;
-    @include pageCopy();
 }
 
 .page {
-    height: 110vh;
-    position: relative;
+    @extend %page;
+    @extend %pageCopy;
+}
 
+.page {
+    @extend %page;
+    @extend %pageCopy;
+}
+
+.page-last {
+    @extend %page;
+    height: 110vh;
+    .second-blob {
+        width: 1000px;
+        height: 800px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        
+        z-index: -1;
+    }
     .title-wrapper {
-        @include text();
+        @extend %text;
         width: 600px;
         height: 395px;
         position: absolute;
@@ -308,7 +227,7 @@ nav {
         }
 
         .button {
-            @include buttondark();
+            @extend %buttondark;
             width: 190px;
             height: 32px;
         }
@@ -332,9 +251,7 @@ nav {
             margin: 0 auto;
 
             .web-title {
-                color: #37447E;
-                font-weight: 900;
-                font-size: 26px;
+                @extend %webTitle;
             }
 
             p {
@@ -343,8 +260,8 @@ nav {
                 font-size: 14px;
             }
 
-            button {
-                @include buttondark();
+            .button {
+                @extend %buttondark;
                 height: 26px;
                 width: 110px;
             }
