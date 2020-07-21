@@ -183,3 +183,60 @@
 
     }
 }
+
+@media (max-width: 550px) {
+
+
+    .text-wrapper {
+        width: 350px;
+        text-align: justify;
+
+        .button,
+        .button-white {
+            width: 125px;
+            font-size: 12px;
+        }
+    }
+
+
+    .page-first {
+        nav {
+            .nav-items {
+                max-width: 95%;
+
+                ul {
+                    li {
+
+                        a {
+                            padding: 0 5px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .page-last {
+        .footer-wrapper {
+            .footer-items-up {
+                max-width: 95%;
+            }
+
+            .footer-items-down {
+                max-width: 95%;
+
+                ul {
+                    li {
+                        a {
+                            margin: 0 10px 0 0;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
