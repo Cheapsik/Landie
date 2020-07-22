@@ -259,10 +259,12 @@
     .page-last {
         .title-wrapper {
             width: 300px;
-            h2{
+
+            h2 {
                 font-size: 24px;
             }
         }
+
         .footer-wrapper {
             .footer-items-up {
                 max-width: 95%;
@@ -402,6 +404,7 @@
             .footer-items-down {
                 max-width: 95%;
                 height: 12vh;
+
                 ul {
                     li {
                         display: flex;
@@ -416,5 +419,37 @@
 
         }
 
+    }
+}
+
+@media (max-height: 400px) {
+
+    .page-first {
+        main {
+            .text-wrapper {
+                margin: 200px auto 0 auto;
+            }
+        }
+        .page {
+            .article-wrapper {
+                .project-wrapper {
+                    margin-top: 200px;
+                }
+                margin-top: 200px;
+            }
+            .title-wrapper {
+                margin-top: 400px;
+            }
+            .copypageimg {
+                margin-top: 200px;
+            }
+        }
+
+        .page-last {
+            .title-wrapper {
+                margin-top: 200px;
+            }
+
+        }
     }
 }

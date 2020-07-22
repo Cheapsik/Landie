@@ -653,4 +653,25 @@ body {
     margin: 2px 0 2px 0;
   }
 }
+
+@media (max-height: 400px) {
+  .page-first main .text-wrapper {
+    margin: 200px auto 0 auto;
+  }
+  .page-first .page .article-wrapper {
+    margin-top: 200px;
+  }
+  .page-first .page .article-wrapper .project-wrapper {
+    margin-top: 200px;
+  }
+  .page-first .page .title-wrapper {
+    margin-top: 400px;
+  }
+  .page-first .page .copypageimg {
+    margin-top: 200px;
+  }
+  .page-first .page-last .title-wrapper {
+    margin-top: 200px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
