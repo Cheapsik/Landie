@@ -573,7 +573,7 @@ body {
 
 @media (max-width: 400px) {
   .page-first main .text-wrapper {
-    width: 200px;
+    width: 300px;
     margin: 100px auto 0 auto;
   }
   .page-first main .text-wrapper h1 {
@@ -585,7 +585,7 @@ body {
   }
   .page-first main .text-wrapper .button,
   .page-first main .text-wrapper .button-white {
-    width: 75px;
+    width: 125px;
     font-size: 10px;
     margin-top: 0;
   }
@@ -598,9 +598,9 @@ body {
     padding: 5px 40px 5px 0;
   }
   .page .article-wrapper {
-    width: 200px;
+    width: 300px;
     text-align: center;
-    margin-top: 0;
+    margin-top: 100px;
   }
   .page .article-wrapper .project-wrapper h2 {
     font-size: 20px;
@@ -609,22 +609,22 @@ body {
     font-size: 12px;
   }
   .page .article-wrapper .project-title {
-    width: 100px;
+    width: 150px;
   }
   .page .smartphonegirl {
-    width: 200px;
-    margin-top: 420px;
+    width: 300px;
+    margin-top: 300px;
   }
   .page .title-wrapper {
-    margin-top: 100px;
-    width: 200px;
+    margin-top: 200px;
+    width: 300px;
   }
   .page .copypageimg {
-    width: 200px;
+    width: 300px;
     margin-top: 200px;
   }
   .page-last .title-wrapper {
-    width: 200px;
+    width: 300px;
   }
   .page-last .title-wrapper h2 {
     font-size: 20px;
@@ -650,7 +650,7 @@ body {
     display: flex;
   }
   .page-last .footer-wrapper .footer-items-down ul li a {
-    margin: 5px 0 5px 0;
+    margin: 2px 0 2px 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

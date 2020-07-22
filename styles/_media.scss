@@ -300,7 +300,7 @@
     .page-first {
         main {
             .text-wrapper {
-                width: 200px;
+                width: 300px;
                 margin: 100px auto 0 auto;
 
 
@@ -315,7 +315,7 @@
 
                 .button,
                 .button-white {
-                    width: 75px;
+                    width: 125px;
                     font-size: 10px;
                     margin-top: 0;
                 }
@@ -339,9 +339,9 @@
 
     .page {
         .article-wrapper {
-            width: 200px;
+            width: 300px;
             text-align: center;
-            margin-top: 0;
+            margin-top: 100px;
 
             .project-wrapper {
                 h2 {
@@ -354,31 +354,30 @@
             }
 
             .project-title {
-                width: 100px;
+                width: 150px;
             }
 
         }
 
         .smartphonegirl {
-            width: 200px;
-            margin-top: 420px;
+            width: 300px;
+            margin-top: 300px;
         }
 
         .title-wrapper {
-            margin-top: 100px;
-            width: 200px;
-
+            margin-top: 200px;
+            width: 300px;
         }
 
         .copypageimg {
-            width: 200px;
+            width: 300px;
             margin-top: 200px;
         }
     }
 
     .page-last {
         .title-wrapper {
-            width: 200px;
+            width: 300px;
 
             h2 {
                 font-size: 20px;
@@ -408,7 +407,7 @@
                         display: flex;
 
                         a {
-                            margin: 5px 0 5px 0;
+                            margin: 2px 0 2px 0;
                         }
                     }
                 }
