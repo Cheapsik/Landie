@@ -642,6 +642,7 @@ body {
   }
   .page-last .footer-wrapper .footer-items-down {
     max-width: 95%;
+    height: 12vh;
   }
   .page-last .footer-wrapper .footer-items-down ul li {
     display: -webkit-box;
@@ -649,7 +650,7 @@ body {
     display: flex;
   }
   .page-last .footer-wrapper .footer-items-down ul li a {
-    margin: 2px 0 2px 0;
+    margin: 5px 0 5px 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
