@@ -505,7 +505,6 @@ body {
 @media (max-width: 550px) {
   .page-first main .text-wrapper {
     width: 300px;
-    font-size: 12px;
   }
   .page-first main .text-wrapper h1 {
     font-size: 20px;
@@ -563,6 +562,88 @@ body {
   }
   .page-last .footer-wrapper .footer-items-down ul li a {
     margin: 0 10px 0 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-first main .text-wrapper {
+    width: 200px;
+    margin: 100px auto 0 auto;
+  }
+  .page-first main .text-wrapper h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .page-first main .text-wrapper p {
+    font-size: 12px;
+  }
+  .page-first main .text-wrapper .button,
+  .page-first main .text-wrapper .button-white {
+    width: 75px;
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .page-first nav .nav-items ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .page-first nav .nav-items ul li a {
+    padding: 5px 40px 5px 0;
+  }
+  .page .article-wrapper {
+    width: 200px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .page .article-wrapper .project-wrapper h2 {
+    font-size: 20px;
+  }
+  .page .article-wrapper .project-wrapper p {
+    font-size: 12px;
+  }
+  .page .article-wrapper .project-title {
+    width: 100px;
+  }
+  .page .smartphonegirl {
+    width: 200px;
+    margin-top: 420px;
+  }
+  .page .title-wrapper {
+    margin-top: 100px;
+    width: 200px;
+  }
+  .page .copypageimg {
+    width: 200px;
+    margin-top: 200px;
+  }
+  .page-last .title-wrapper {
+    width: 200px;
+  }
+  .page-last .title-wrapper h2 {
+    font-size: 20px;
+  }
+  .page-last .footer-wrapper .footer-items-up {
+    max-width: 95%;
+    height: 10vh;
+  }
+  .page-last .footer-wrapper .footer-items-up p {
+    font-size: 10px;
+  }
+  .page-last .footer-wrapper .footer-items-up .button {
+    width: 80px;
+    font-size: 10px;
+  }
+  .page-last .footer-wrapper .footer-items-down {
+    max-width: 95%;
+  }
+  .page-last .footer-wrapper .footer-items-down ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .page-last .footer-wrapper .footer-items-down ul li a {
+    margin: 2px 0 2px 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
