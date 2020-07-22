@@ -435,7 +435,7 @@ body {
     left: 0;
     top: 0;
     position: relative;
-    margin: 200px auto;
+    margin: 0 auto;
   }
   .page .copypageimg {
     top: 0;
@@ -455,7 +455,7 @@ body {
     left: 0;
     top: 0;
     position: relative;
-    margin: 300px auto;
+    margin: 0 auto;
   }
   .text-wrapper {
     margin: 200px auto;
@@ -546,6 +546,12 @@ body {
   .page .copypageimg {
     width: 400px;
     margin-top: 200px;
+  }
+  .page-last .title-wrapper {
+    width: 300px;
+  }
+  .page-last .title-wrapper h2 {
+    font-size: 24px;
   }
   .page-last .footer-wrapper .footer-items-up {
     max-width: 95%;
