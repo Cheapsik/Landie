@@ -12,6 +12,21 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #F0F0F0;
 }
+.body-active{
+    background: #333;
+}
+.active{
+    color: white;
+}
+.dark-mode{
+    width: 30px;
+    height: 30px;
+    background-color:red;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
 
 .page-first {
     height: 100vh;
@@ -163,6 +178,7 @@ body {
         img {
             position: relative;
             left: 0;
+
 
         }
     }
